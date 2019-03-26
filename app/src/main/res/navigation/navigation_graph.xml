@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@id/homeFragment">
+
+    <fragment
+            android:id="@+id/homeFragment"
+            android:name="com.isanaka.trademe.view.home.HomeFragment"
+            android:label="Category Listing"
+            tools:layout="@layout/fragment_home">
+        <action
+                android:id="@+id/fragmentAtoB"
+                app:destination="@id/ListingDetails" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/ListingDetails"
+            android:name="com.isanaka.trademe.view.details.ListingDetailsFragment"
+            android:label="Listing Details"
+            tools:layout="@layout/fragment_listing_details">
+    </fragment>
+
+</navigation>
