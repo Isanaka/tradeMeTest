@@ -40,5 +40,4 @@ class ListingDetailsFragment : BaseFragment() {
             }.also { hideProgress() }
         }
     }
-
 }

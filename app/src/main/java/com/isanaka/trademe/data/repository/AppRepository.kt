@@ -19,5 +19,4 @@ interface AppRepository {
         failure: (ApiError) -> Unit = {},
         terminate: () -> Unit = {}
     ): Disposable
-
 }

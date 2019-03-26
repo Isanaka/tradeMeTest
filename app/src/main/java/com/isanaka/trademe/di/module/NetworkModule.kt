@@ -53,7 +53,6 @@ class NetworkModule {
         return client.build()
     }
 
-
     @Provides
     @Singleton
     fun providesGson(): Gson {

@@ -6,7 +6,6 @@ import com.isanaka.trademe.di.component.DaggerCoreComponent
 import dagger.android.AndroidInjector
 import dagger.android.support.DaggerApplication
 
-
 class TradeMeApp : DaggerApplication() {
     override fun applicationInjector(): AndroidInjector<out DaggerApplication> {
         return DaggerCoreComponent

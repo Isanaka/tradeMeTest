@@ -41,5 +41,4 @@ data class ApiError(
          */
         NOT_DEFINED;
     }
-
 }

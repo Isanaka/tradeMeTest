@@ -31,5 +31,4 @@ class MainActivity : BaseActivity(), BaseInteractions {
     override fun hideProgress() {
         progressBar.visibility = View.GONE
     }
-
 }

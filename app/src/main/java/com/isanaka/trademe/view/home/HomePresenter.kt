@@ -1,10 +1,8 @@
 package com.isanaka.trademe.view.home
-
 import com.isanaka.trademe.data.model.*
 import com.isanaka.trademe.data.network.ApiError
 import com.isanaka.trademe.data.repository.AppRepository
 import io.reactivex.disposables.CompositeDisposable
-
 
 class HomePresenter(val repo: AppRepository) : HomeContract.Presenter {
 
@@ -38,7 +36,6 @@ class HomePresenter(val repo: AppRepository) : HomeContract.Presenter {
     }
 
     override fun onListingSelected(position: Int) {
-
         listings.getOrNull(position)?.let {
             var params = ListingParam(
                 listingId = "#" + it.listingId,
@@ -48,11 +45,9 @@ class HomePresenter(val repo: AppRepository) : HomeContract.Presenter {
             view?.showListingDetails(params)
 
         }
-
     }
 
     override fun onCategorySelected(category: String, position: Int) {
-
         repo.getListings(category,
             fun(it: ListingResponse) {
                 lastSelectedIndex = position

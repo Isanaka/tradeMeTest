@@ -12,5 +12,4 @@ abstract class MainActivityProviders {
 
     @ContributesAndroidInjector
     abstract fun provideListingDetailsFragment(): ListingDetailsFragment
-
 }

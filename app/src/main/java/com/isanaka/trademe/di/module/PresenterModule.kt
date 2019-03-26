@@ -6,7 +6,6 @@ import com.isanaka.trademe.view.home.HomePresenter
 import dagger.Module
 import dagger.Provides
 
-
 @Module
 class PresenterModule {
     @Provides

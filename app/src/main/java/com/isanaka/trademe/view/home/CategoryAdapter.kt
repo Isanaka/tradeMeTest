@@ -9,7 +9,6 @@ import com.isanaka.trademe.core.onClick
 import com.isanaka.trademe.data.model.Category
 import kotlinx.android.synthetic.main.category_list_item.view.*
 
-
 class CategoryAdapter(private var items: MutableList<Category>, private var onclick: ((View, Int) -> Unit)) :
     RecyclerView.Adapter<CategoryAdapter.ItemHolder>() {
 
@@ -44,5 +43,4 @@ class CategoryAdapter(private var items: MutableList<Category>, private var oncl
         items.clear()
         notifyDataSetChanged()
     }
-
 }

@@ -18,7 +18,7 @@ class ApiDisposable<T>(private val success: (body: T) -> Unit, private val failu
         else
             success(t)
     }
-
+    //mandatory override
     override fun onComplete() {
     }
 
@@ -51,6 +51,4 @@ class ApiDisposable<T>(private val success: (body: T) -> Unit, private val failu
     } catch (t: Throwable) {
         ""
     }
-
-
 }

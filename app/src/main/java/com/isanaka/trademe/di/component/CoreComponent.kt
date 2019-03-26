@@ -25,6 +25,4 @@ interface CoreComponent : AndroidInjector<TradeMeApp> {
 
         fun build(): CoreComponent
     }
-
-
 }
