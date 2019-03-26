@@ -6,4 +6,6 @@
     <string name="no_listing_found_for_this_category">No listing found for this category</string>
     <string name="category_details">%1$s(%2$d of %3$d)</string>
     <string name="browse_categories">Browse Categories</string>
+    <string name="trade_me">Trade Me</string>
+    <string name="listing_details">Listing Details</string>
 </resources>
