@@ -88,7 +88,7 @@ class HomeFragment : BaseFragment(), HomeContract.View {
         hideProgress()
     }
 
-    private val onCategoryClicked: (View, Int, Int) -> Unit = { view, position, type ->
+    private val onCategoryClicked: (View, Int) -> Unit = { view, position ->
         run {
             infoAndError.visibility = View.GONE
             showProgress()
@@ -97,7 +97,7 @@ class HomeFragment : BaseFragment(), HomeContract.View {
         }
     }
 
-    private val onListingClicked: (View, Int, Int) -> Unit = { view, position, type ->
+    private val onListingClicked: (View, Int) -> Unit = { view, position ->
         showProgress()
         presenter.onListingSelected(position)
     }

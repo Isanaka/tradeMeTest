@@ -22,7 +22,6 @@ class MainActivity : BaseActivity(), BaseInteractions {
     private fun setupToolbar() {
         setSupportActionBar(toolbar)
         toolbar.setupWithNavController(NavHostFragment.findNavController(nav_host_fragment))
-        //toolbar.setTitleTextColor(resources.getColor(R.color.white))
     }
 
     override fun showProgress() {

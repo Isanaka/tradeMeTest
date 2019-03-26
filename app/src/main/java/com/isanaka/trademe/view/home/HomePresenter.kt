@@ -19,7 +19,7 @@ class HomePresenter(val repo: AppRepository) : HomeContract.Presenter {
         showCategories()
     }
 
-    fun showCategories( ) {
+    fun showCategories() {
         repo.getCategories(
             fun(it: CategoryResponse) {
                 categories = it.Subcategories
@@ -41,7 +41,7 @@ class HomePresenter(val repo: AppRepository) : HomeContract.Presenter {
 
         listings.getOrNull(position)?.let {
             var params = ListingParam(
-                listingId = "#"+it.listingId,
+                listingId = "#" + it.listingId,
                 title = it.title,
                 photoUrl = it.photoUrls?.getOrNull(0)
             )
@@ -59,7 +59,7 @@ class HomePresenter(val repo: AppRepository) : HomeContract.Presenter {
                 view?.updateCategoryTitle(
                     CategoryDetails(
                         title = categories[position].name,
-                        selected = position+1,
+                        selected = position + 1,
                         total = categories.size
                     )
                 )

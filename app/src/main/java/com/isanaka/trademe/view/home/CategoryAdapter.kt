@@ -10,7 +10,7 @@ import com.isanaka.trademe.data.model.Category
 import kotlinx.android.synthetic.main.category_list_item.view.*
 
 
-class CategoryAdapter(private var items: MutableList<Category>, private var onclick: ((View, Int, Int) -> Unit)) :
+class CategoryAdapter(private var items: MutableList<Category>, private var onclick: ((View, Int) -> Unit)) :
     RecyclerView.Adapter<CategoryAdapter.ItemHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int): ItemHolder =

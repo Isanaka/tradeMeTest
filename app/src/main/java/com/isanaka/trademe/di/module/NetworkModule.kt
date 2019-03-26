@@ -37,7 +37,6 @@ class NetworkModule {
     fun providesOkHttpClient(): OkHttpClient {
 
         val client = OkHttpClient.Builder()
-            //  .cache(cache)
             .connectTimeout(60, TimeUnit.SECONDS)
             .writeTimeout(60, TimeUnit.SECONDS)
             .readTimeout(60, TimeUnit.SECONDS)

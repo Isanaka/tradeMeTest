@@ -15,7 +15,7 @@ import com.isanaka.trademe.data.model.Listing
 import kotlinx.android.synthetic.main.listing_list_item.view.*
 
 
-class ListingAdapter(private var items: MutableList<Listing>, private var onclick: ((View, Int, Int) -> Unit)) :
+class ListingAdapter(private var items: MutableList<Listing>, private var onclick: ((View, Int) -> Unit)) :
     RecyclerView.Adapter<ListingAdapter.ItemHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int): ItemHolder =
@@ -33,8 +33,8 @@ class ListingAdapter(private var items: MutableList<Listing>, private var onclic
 
     ) : RecyclerView.ViewHolder(view) {
 
-        val imageView: ImageView = view.listingThumbnail
-        val textView: TextView = view.listingTitle
+        private val imageView: ImageView = view.listingThumbnail
+        private val textView: TextView = view.listingTitle
 
         fun bind(item: Listing) = with(item) {
             textView.text = this.title
